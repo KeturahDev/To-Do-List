@@ -9,7 +9,10 @@ By Keturah Howard, Sommer Howe, January 24th 2020
 
 * return the value of the form input.
   * input: "drink water"
-  * output: "drink water"
+  * output: "drink water" in console
+* pass input into buisness logic function
+  * input: makeListItem($('input#todo'))
+  * output: 'function called: 'input'' in console
 * return the value of form inpit into a list item
   * input: "drink water"
   * output: `<li>` drink water `</li>`
