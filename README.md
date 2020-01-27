@@ -7,6 +7,19 @@ By Keturah Howard, Sommer Howe, January 24th 2020
 ## Behavioral Driven Development
   *Heres a list of the specific behaviors I wanted to be acheived throughout the development process, starting from most basic to complex.*
 
+* return the value of the form input.
+  * input: "drink water"
+  * output: "drink water"
+* return the value of form inpit into a list item
+  * input: "drink water"
+  * output: `<li>` drink water `</li>`
+* change color of list item when clicked on
+  * input: click
+  * output: *background color changes of list item*
+* attatch delete button to list item
+  * input: "drink water"
+  * output: `<li>` drink water `</li>` `<button>`delete `</button>`
+
 
 
 
