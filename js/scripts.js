@@ -38,10 +38,13 @@ $(document).ready(function() {
     var listItem = makeListItem(input);
     console.log('ListItem',listItem)
 
-    $('#output').append('<li>' + listItem.goal + '</li>');
+    $('#output').append('<li class="markDone">' + listItem.goal + '</li>');
 
     // console.log('input =', input);
     // console.log('function called:',makeListItem(input));
     console.log('ToDo List =', toDo)
   });
+  $('.markDone').click(function(event) {
+    //append a style somehow...?? like a strike though
+  })
 });
