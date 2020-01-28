@@ -33,10 +33,15 @@ var makeListItem = function(listi) {
 $(document).ready(function() {
   $('#formy').submit(function(event) {
     event.preventDefault();
-    var input = $('#todo').val();
-    console.log('input =', input);
 
-    console.log('function called:',makeListItem(input));
+    var input = $('#todo').val();
+    var listItem = makeListItem(input);
+    console.log('ListItem',listItem)
+
+    $('#output').append('<li>' + listItem.goal + '</li>');
+
+    // console.log('input =', input);
+    // console.log('function called:',makeListItem(input));
     console.log('ToDo List =', toDo)
   });
 });
