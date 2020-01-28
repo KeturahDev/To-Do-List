@@ -1,16 +1,30 @@
 //Buisness Logic: ----------------------------
-
-function Objective(goal) {
-  this.goal = goal
+// ToDo buisness logic ____
+function ToDo() {
+  this.listItem = [];
+  this.id = 0;
 }
 
-var objective = new Objective ();
+ToDo.prototype.addItem = function(item) {
+  this.id = this.assaignId();
+  this.listItem.push(item);
+}
+
+ToDo.prototype.assaignId = function() {
+  this.id += 1;
+  return this.id;
+} 
+// Objective buisness logic ____
+function Objective(goal) {
+  this.goal = goal;
+}
+
+var toDo = new ToDo ();
 
 var makeListItem = function(listi) {
   var newListi = new Objective(listi);
+  toDo.addItem(newListi);
   return newListi
-  // console.log('function ran:', newListi);
-
 }
 
 
@@ -23,5 +37,6 @@ $(document).ready(function() {
     console.log('input =', input);
 
     console.log('function called:',makeListItem(input));
+    console.log('ToDo List =', toDo)
   });
 });
